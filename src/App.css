@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi", sans-serif !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.App {
+  min-height: 100vh;
+  width: 85%;
+  max-width: 1900px;
+  min-width: 300px; /* Added for better control */
+  margin: 0 auto;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f3b6ff;
+  z-index: 1000;
+  padding: 1rem 2%; /* Using relative units */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+}
+.search-container {
+  position: relative;
+}
+.search-container input[type="text"] {
+  padding: 15px 5%; /* Adjusted for responsiveness */
+  border-radius: 5rem;
+  text-align: left;
+}
+.navbar-menu-container {
+  display: none;
+}
+.navbar-links-container a {
+  margin-right: 3rem; /* Consider changing to % for responsiveness */
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.primary-button, .secondary-button {
+  padding: 0.9rem 1.75rem;
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+.primary-button:hover, .secondary-button:hover {
+  background-color: rgb(234, 234, 234); /* Adjust color for secondary-button if needed */
+}
+.home-banner-container, .about-section-container {
+  position: relative;
+  display: flex;
+  padding-top: 3rem;
+}
+.home-image-section, .about-section-image-container {
+  max-width: 600px;
+  flex: 1;
+}
+.home-text-section, .about-section-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.primary-heading, .primary-subheading {
+  font-size: clamp(2.5rem, 5vw, 6rem);
+  color: #000000;
+  line-height: 1.2;
+  margin-top: 2rem;
+  text-align: center;
+}
+.primary-text1, .primary-text2, .primary-down-text {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #6a6a6a;
+  margin: 1.5rem 0rem;
+  position: relative; /* Changed from absolute for better flow */
+  left: 0;
+  transform: none; /* Adjusted for responsive design */
+}
+/* Additional responsive adjustments */
+@media (max-width: 1200px) {
+  .navbar-links-container a, .primary-button, .secondary-button {
+    margin-right: 2rem; /* Smaller margin */
+    padding: 0.7rem 1.4rem; /* Smaller padding */
+    font-size: 1rem; /* Smaller font */
+  }
+}
+@media (max-width: 768px) {
+  .App {
+    width: 95%;
+  }
+  .primary-heading, .primary-subheading {
+    margin-top: 1rem;
+  }
+  .navbar-menu-container {
+    display: flex;
+  }
+  .navbar-links-container {
+    display: none;
+  }
+  .search-container input[type="text"] {
+    padding: 10px 20px;
+  }
+  .home-banner-container, .about-section-container {
+    flex-direction: column-reverse;
+  }
+  .home-text-section, .about-section-text-container {
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .primary-heading, .primary-subheading {
+    font-size: clamp(2rem, 8vw, 4rem);
+  }
+  .navbar-links-container a, .primary-button, .secondary-button {
+    margin-right: 1rem; /* Even smaller margin */
+    font-size: 0.9rem; /* Even smaller font */
+  }
+}

@@ -1,0 +1,91 @@
+.work-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background for the whole section */
+}
+
+.work-section-top {
+  text-align: center;
+  margin-bottom: 40px; /* Space between the top section and the items */
+}
+
+.primary-subheading, .primary-heading, .primary-text {
+  color: #333; /* Consistent text color */
+}
+
+.primary-subheading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.primary-heading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.primary-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px; /* Extra space before the items */
+}
+
+.work-section-bottom {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Space between items */
+  max-width: 1200px; /* Limiting the width for better layout control */
+}
+
+.work-section-info {
+  flex-basis: calc(33.333% - 30px); /* Adjust to fit 3 items per row, accounting for the gap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.work-section-info:hover {
+  transform: translateY(-10px); /* Hover effect to move the item up */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+}
+
+.info-boxes-img-container img {
+  width: 100%;
+  max-width: 300px; /* Enlarged images */
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Adjusting titles and descriptions for readability */
+.work-section-info h2 {
+  font-size: 1.4rem;
+  color: #5D3FD3; /* Theme color for titles */
+  margin-bottom: 10px;
+}
+
+.work-section-info p {
+  font-size: 1rem;
+  color: #666; /* Slightly lighter text for the description */
+  text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 1024px) {
+  .work-section-info {
+    flex-basis: calc(50% - 30px); /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .work-section-info {
+    flex-basis: 100%; /* 1 item per row on small screens */
+  }
+}

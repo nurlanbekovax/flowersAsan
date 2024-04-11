@@ -1,0 +1,57 @@
+.contact-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px; /* Adjust the padding as needed */
+  background-color: #f0f0f0; /* Consistent background color with Home.css */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.primary-heading {
+  color: #333;
+  font-size: 2rem; /* Consistent font size with Home.css */
+  text-align: center;
+  margin: 20px 0; /* Provides space between headings and the form */
+}
+
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between form elements */
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the form */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Consistent shadow with Home.css */
+  max-width: 500px; /* Maximum width of the form */
+  width: 100%;
+}
+
+.contact-form-container input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Slightly rounded edges for the input field */
+  margin: 0; /* Adjust margin as needed */
+}
+
+.secondary-button {
+  padding: 10px 20px;
+  background-color: #5D3FD3; /* Purple background, consistent with Home.css */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.secondary-button:hover {
+  background-color: #4b2ca7; /* Slightly darker purple on hover */
+}
+
+@media (max-width: 768px) {
+  .contact-form-container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}

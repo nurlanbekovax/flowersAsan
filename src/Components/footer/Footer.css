@@ -1,0 +1,69 @@
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  background-color: #f0f0f0; /* Light background color */
+  width: 100%;
+}
+
+.footer-section-one, .footer-section-two {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Ensures content is well-aligned */
+}
+
+.footer-logo-container img {
+  width: 150px; /* Adjust the logo size as needed */
+  height: auto;
+}
+
+.footer-icons {
+  font-size: 1.5rem; /* Adjust icon size */
+  display: flex;
+  gap: 20px; /* Space between icons */
+  color: #333; /* Icon color */
+}
+
+.footer-icons svg:hover {
+  color: #5D3FD3; /* Hover color for icons, matching your theme */
+  cursor: pointer;
+}
+
+.footer-section-two {
+  margin-top: 40px; /* Space between sections */
+}
+
+.footer-section-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between items */
+}
+
+.footer-section-columns span {
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-section-columns span:hover {
+  color: #5D3FD3; /* Hover color, matching your theme */
+}
+
+@media (max-width: 768px) {
+  .footer-section-one, .footer-section-two {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section-columns {
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .footer-icons {
+    margin-top: 20px;
+  }
+}

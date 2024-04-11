@@ -1,0 +1,53 @@
+.nav-logo-container h1 {
+  font-size: 3rem;
+  color: #333;
+  font-family: 'Reem Kufi', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.navbar-left-content, .navbar-right-content {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .navbar-right-content {
+    display: none;
+  }
+
+  .navbar-left-content {
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+}
+
+.navbar-link {
+  margin: 0 10px;
+  color: #000; /* Set text color to black */
+  font-size: 18px; /* Make the font size larger */
+  font-weight: bold; /* Make the font weight bold */
+  text-transform: uppercase; /* OPTIONAL: Makes text uppercase for a more distinctive look */
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for color and transform */
+}
+
+.navbar-link:hover, .navbar-link:focus {
+  color: #555; /* Change color on hover/focus for cooler effect */
+  transform: scale(1.1); /* Slightly increase size on hover/focus for emphasis */
+  cursor: pointer; /* Ensure it's clear the item is clickable */
+}

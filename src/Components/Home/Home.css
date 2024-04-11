@@ -1,0 +1,48 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Make it take full viewport height */
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background color */
+  color: #333; /* Dark text for contrast */
+}
+
+.home-text-section {
+  max-width: 600px; /* Limit the width of text for better readability */
+  text-align: center; /* Center the text */
+}
+
+.primary-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #5D3FD3; /* Give a unique color */
+}
+
+.primary-text1, .primary-text2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #555; /* Slightly lighter text color for subheadings */
+}
+
+.primary-down-text {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #666; /* Even lighter for regular text */
+}
+
+.secondary-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  background-color: #5D3FD3; /* Match the heading color or choose another */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+}
+
+.secondary-button:hover, .secondary-button:focus {
+  background-color: #4b2ca7; /* Darker shade on hover/focus */
+  transform: scale(1.05); /* Slightly larger on hover/focus */
+}

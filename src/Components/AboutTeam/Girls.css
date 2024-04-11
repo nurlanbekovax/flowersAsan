@@ -1,0 +1,84 @@
+.work-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.work-section-top {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.primary-subheading, .primary-heading {
+  color: #333;
+}
+
+.testimonial-section-bottom {
+  width: 100%;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the space between images */
+}
+
+.imagebox {
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 50%; /* Ensure the container is also circular */
+  background-color: #fff; /* Initial background color */
+  padding: 10px; /* Space around the image */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and transform */
+}
+
+.imagebox img {
+  width: 200px; /* Adjust based on your preference */
+  height: auto;
+  border-radius: 50%; /* Circular images */
+  transition: transform 0.5s ease; /* Smooth transition for hover effect */
+}
+
+.imagebox h1, .imagebox h3 {
+  margin: 10px 0;
+}
+
+/* Updated hover effect */
+.imagebox:hover {
+  background-color: #5D3FD3; /* Background changes to purple */
+  transform: rotate(360deg); /* Rotate image 360 degrees */
+}
+
+.imagebox:hover img {
+  transform: scale(1.1); /* Enlarge image */
+}
+
+.testimonials-stars-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.testimonials-stars-container svg {
+  color: #ffc107; /* Star color */
+  margin: 0 5px;
+}
+
+.testimonials-comment-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .image-section {
+    flex-direction: column;
+  }
+
+  .imagebox {
+    margin-bottom: 20px;
+  }
+}
